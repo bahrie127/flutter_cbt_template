@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cbt/presentation/home/pages/home_page.dart';
+import 'package:flutter_cbt/presentation/materi/pages/materi_page.dart';
+import 'package:flutter_cbt/presentation/profile/pages/profile_page.dart';
 
 import '../../../core/assets/assets.gen.dart';
 import '../../../core/constants/colors.dart';
@@ -17,13 +19,11 @@ class _DashboardPageState extends State<DashboardPage> {
 
   final List<Widget> _pages = [
     const HomePage(),
-    const Center(child: Text('Materi')),
+    const MateriPage(),
     const Center(
-      child: Text('Notif'),
+      child: Text('No Notification'),
     ),
-    const Center(
-      child: Text('Profile'),
-    ),
+    const ProfilePage(),
   ];
 
   void _onItemTapped(int index) {
